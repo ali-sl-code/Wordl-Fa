@@ -1,9 +1,12 @@
-import { useCallback, useEffect, useMemo } from 'react'
+import { useEffect } from 'react'
 
 import Header from './components/Header'
+import Tiles from './components/Tiles'
 import useFetch from './hooks/useFetch'
 
+import './fonts/IRANSansWeb_Bold.ttf'
 import './index.css'
+import './App.css'
 
 function App() {
   const [word] = useFetch('http://localhost:3001/word')
@@ -15,7 +18,7 @@ function App() {
   return (
     <main className="w-full">
       <Header />
-      <section className="Tiles"></section>
+      <Tiles />
       <section className="Keybord"></section>
     </main>
   )
