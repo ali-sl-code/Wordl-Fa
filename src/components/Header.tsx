@@ -5,8 +5,9 @@ import {
   faGear,
   faQuestion,
 } from '@fortawesome/free-solid-svg-icons'
+import { memo } from 'react'
 
-export default function Header() {
+function Header() {
   return (
     <header className="w-full flex items-center justify-around py-3 pb-5 border-b-[1px]">
       <div className='pt-2'>
@@ -33,3 +34,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default memo(Header)
