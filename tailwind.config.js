@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Shizuru: ['Shizuru', 'cursive'],
+      IRANSansBold: ['IRANSansBold'],
     },
     extend: {},
   },
