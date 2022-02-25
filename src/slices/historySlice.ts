@@ -4,61 +4,151 @@ export interface HistoryState {
   words: [
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
         {
           keys: [
-            string | null,
-            string | null,
-            string | null,
-            string | null,
-            string | null,
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
+            {
+              key: string | null,
+              validate: "correct" | "present" | "absent" | null
+            },
           ]
           completed: boolean
         },
@@ -66,10 +156,10 @@ export interface HistoryState {
     | null
 }
 
-export interface SetWord {
+export interface SetKey {
   row: number
   col: number
-  word: string
+  key: string
 }
 
 export interface Completed {
@@ -79,27 +169,153 @@ export interface Completed {
 const initialState: HistoryState = {
   words: [
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
     {
-      keys: [null, null, null, null, null],
+      keys: [
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+        {
+          key: null,
+          validate: null,
+        },
+      ],
       completed: false,
     },
   ],
@@ -109,16 +325,12 @@ export const historySlice = createSlice({
   name: 'history',
   initialState,
   reducers: {
-    setWord: (state, action: PayloadAction<SetWord>) => {
-      state.words![action.payload.row]['keys'][action.payload.col] = action.payload.word
-    },
-
-    completed: (state, action: PayloadAction<Completed>) => {
-        state.words![action.payload.row]['completed'] = true
+    setKey: (state, action: PayloadAction<SetKey>) => { //action.payload.word
+      state.words![action.payload.row].keys[action.payload.col].key = action.payload.key
     }
   },
 })
 
-export const {} = historySlice.actions
+export const { setKey } = historySlice.actions
 
 export default historySlice.reducer
