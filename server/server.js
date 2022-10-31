@@ -22,11 +22,10 @@ app.get('/word', (_, res) => {
 
       if (val) {
         let word = val[0]
-        res.json({ status: 'OK', ...word })
+        return res.json({ status: 'OK', ...word })
       }
 
       console.log('Database is empty or query is wrong')
-      return db.close()
     })
   })
 })
